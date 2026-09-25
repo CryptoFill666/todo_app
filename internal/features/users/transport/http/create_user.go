@@ -1,0 +1,12 @@
+package users_transport_http
+
+import "net/http"
+
+type CreateUserRequest struct {
+	FullName    string  `json:"full_name"`
+	PhoneNumber *string `json:"phone_number"`
+}
+
+func (h *UsersHTTPHandler) CreateUser(w http.ResponseWriter, r *http.Request) {
+
+}
